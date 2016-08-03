@@ -1,8 +1,13 @@
 # react-study
 react-study
 
-# features
+------------
+
+## features
 
 - suport ie-8
-- with react-redux, redux , redux form
+- with react-redux, redux , redux-form
+
+
+------------
 
