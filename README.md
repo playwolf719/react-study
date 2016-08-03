@@ -1,5 +1,5 @@
 # react-study
-react-study (surport ie 8)
+react-study (surport ie-8)
 
 ------------
 
