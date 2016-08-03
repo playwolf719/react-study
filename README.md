@@ -1,2 +1,3 @@
 # react-study
-react-study; based on ie-8
+react-study
+worked for ie-8
