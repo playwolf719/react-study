@@ -17,6 +17,7 @@
     "history": "^2.1.2",
     "jquery": "^1.11.3",
     "react": "^0.14.7",
+    "react-addons-css-transition-group": "^0.14.8",
     "react-dom": "^0.14.7",
     "react-redux": "^4.4.5",
     "react-router": "^2.3.0",
