@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 
 export default class TextInput extends React.Component {
   	constructor(props) {
-	    // super(props);
+	    super(props);
+	    this.handleChange = this.handleChange.bind(this);
   	}
   	handleChange(e) {
 		this.props.handleUserInput(e.target.value);

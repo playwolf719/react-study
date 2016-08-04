@@ -7,12 +7,12 @@ export default class ProsAndState extends React.Component {
   	constructor(props) {
 	    super(props);
 	    this.state = {text: ""};
-	    this.handleUserInput = this.handleUserInput.bind(this);
+	    this.hehe = this.hehe.bind(this);
   	}
-  	handleUserInput(filterText) {
+  	hehe(filterText) {
         this.setState({text: filterText});
   	}
 	render() {
-	   	return <div><TextInput text={this.state.text} handleUserInput={this.handleUserInput} /><InputShow text={this.state.text}/></div>
+	   	return <div><TextInput text={this.state.text} handleUserInput={this.hehe} /><InputShow text={this.state.text}/></div>
 	}
 }

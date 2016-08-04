@@ -8,6 +8,6 @@ import ProsAndState from './ProsAndState/ProsAndState.js';
 
 render((
     <Router history={hashHistory}>
-        <Route path="/ProsAndState"  component={ProsAndState}/>
+        <Route path="/"  component={ProsAndState}/>
     </Router>
 ), document.getElementById('Content'));
