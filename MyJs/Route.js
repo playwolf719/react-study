@@ -13,7 +13,8 @@ render((
     <Router history={hashHistory}>
 
     {/* <Route path="/"  component={Test} /> */}
-        <Route path="/" /*组件内注释*/  component={Test} />
-        <Route path="/an1" /*组件内注释*/  component={Carousel}/>
+        <Route path="/props" /*组件内注释*/  component={ProsAndState} />
+        <Route path="/ani/1" /*组件内注释*/  component={Test} />
+        <Route path="/ani/2" /*组件内注释*/  component={Carousel}/>
     </Router>
 ), document.getElementById('Content'));

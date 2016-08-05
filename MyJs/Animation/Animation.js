@@ -3,7 +3,6 @@ import React from 'react';
 // var ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
 var ReactCSSTransitionGroup = require('react-addons-css-transition-group');
 
-
 var Test = React.createClass({
   getInitialState: function() {
     return {items: ['hello', 'world', 'click', 'me']};
