@@ -6,6 +6,7 @@ import PropsAndState from './PropsAndState/PropsAndState.js';
 import Test from './Animation/Animation.js';
 import Carousel from './Animation/Carousel.js';
 import Redux from './Redux/Redux.js';
+import ReduxForm from './ReduxForm/index.js';
 
 
 render((
@@ -16,5 +17,6 @@ render((
         <Route path="/ani/1" /*组件内注释*/  component={Test} />
         <Route path="/ani/2" /*组件内注释*/  component={Carousel}/>
         <Route path="/redux" /*组件内注释*/  component={Redux}/>
+        <Route path="/reduxform" /*组件内注释*/  component={ReduxForm}/>
     </Router>
 ), document.getElementById('Content'));
