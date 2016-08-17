@@ -6,14 +6,18 @@ react-study (surport ie-8)
 ## features
 
 - suport ie-8
-- with react-redux, redux , redux-form
-- some code style is ES6
+- with react, redux , redux-form
+- code style are ES6 and ES5
 
 ------------
 
 ## content
 
 - PropsAndState
-  * scens for props and state
+  * Demo for showing how react props and react state work together
 - Animation
-  * simple demo for animation
+  * Demo for react animation
+- Redux
+  * Demo for react and redux
+- ReduxForm
+  * Demo for redux-form
