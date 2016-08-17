@@ -14,6 +14,6 @@ react-study (surport ie-8)
 ## content
 
 - PropsAndState
-  * scens for props and state
+  * scens for react props and state
 - Animation
-  * simple demo for animation
+  * simple demo for react animation
