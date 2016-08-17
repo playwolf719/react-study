@@ -1,54 +1,34 @@
 import React, { Component, PropTypes } from 'react'
 import { reduxForm } from 'redux-form'
-export const fields = [ 'username', 'email', 'age' ]
+import TextInput from '../input/TextInput.js'
+export const fields = [ 'username' ,"othername"]
 
 const validate = values => {
   const errors = {}
   if (!values.username) {
     errors.username = 'Required'
-  } else if (values.username.length > 15) {
-    errors.username = 'Must be 15 characters or less'
   }
-  if (!values.email) {
-    errors.email = 'Required'
-  } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
-    errors.email = 'Invalid email address'
-  }
-  if (!values.age) {
-    errors.age = 'Required'
-  } else if (isNaN(Number(values.age))) {
-    errors.age = 'Must be a number'
-  } else if (Number(values.age) < 18) {
-    errors.age = 'Sorry, you must be at least 18 years old'
+  if (!values.othername) {
+    errors.othername = 'Required'
   }
   return errors
 }
 
+
 class SynchronousValidationForm extends Component {
+  // constructor(props) {
+  //   super(props);
+  // }
+
+  myClickForm(){
+    console.log("-----form---------");
+    console.log(this.props);
+  }
   render() {
-    const { fields: { username, email, age }, resetForm, handleSubmit, submitting } = this.props
-    return (<form onSubmit={handleSubmit}>
-        <div>
-          <label>Username</label>
-          <div>
-            <input type="text" placeholder="Username" {...username}/>
-          </div>
-          {username.touched && username.error && <div>{username.error}</div>}
-        </div>
-        <div>
-          <label>Email</label>
-          <div>
-            <input type="text" placeholder="Email" {...email}/>
-          </div>
-          {email.touched && email.error && <div>{email.error}</div>}
-        </div>
-        <div>
-          <label>Age</label>
-          <div>
-            <input type="text" placeholder="Age" {...age}/>
-          </div>
-          {age.touched && age.error && <div>{age.error}</div>}
-        </div>
+    const { fields: { username,othername }, resetForm, handleSubmit, submitting } = this.props
+    return (<form onSubmit={handleSubmit} onClick={this.myClickForm.bind(this)}>
+        <TextInput {...username} formProps={this.props} />
+        <TextInput {...othername} formProps={this.props} />
         <div>
           <button type="submit" disabled={submitting}>
             {submitting ? <i/> : <i/>} Submit
@@ -69,8 +49,20 @@ SynchronousValidationForm.propTypes = {
   submitting: PropTypes.bool.isRequired
 }
 
-export default reduxForm({
-  form: 'synchronousValidation',
-  fields,
-  validate
-})(SynchronousValidationForm)
+export default reduxForm(
+  {
+    form: 'synchronousValidation',
+    fields,
+    validate
+  }
+//   ,
+//   /* mapStateToProps = */ undefined,
+// /* mapDispatchToProps = */ function(dispatch) {
+//     return {
+//         // This will be passed as a property to the presentational component
+//         myTouch: function(field) {
+//             dispatch(touch("synchronousValidation", field))
+//         }
+//     }
+//   }
+)(SynchronousValidationForm)

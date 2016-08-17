@@ -9,9 +9,6 @@ var ImageCarousel = React.createClass({
     imageSrc: React.PropTypes.string.isRequired
   },
   handleClick:function(){
-    console.log(this.props);
-    console.log(this.refs.theImg);
-    console.log($(this.refs.theImg).attr('src') );
     if($(this.refs.theImg).attr('src').indexOf("big1")>-1){
       this.props.passHehe("http://localhost/my/react-study/img/fun.png");
     }else{
