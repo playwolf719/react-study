@@ -13,8 +13,8 @@ export default class TextInput extends React.Component {
         // console.log(this.props);
         // 
         // The followings 2 are both OK.
-        // this.props.formProps.touch(this.props.name);
-        this.props.formProps.dispatch(touch("synchronousValidation",this.props.name));
+        this.props.formProps.touch(this.props.name);
+        // this.props.formProps.dispatch(touch("synchronousValidation",this.props.name));
 
         // console.log("------right after Touch----props touch no change--");
         // console.log(this.props);
@@ -26,7 +26,7 @@ export default class TextInput extends React.Component {
         return <div onClick={this.myClick.bind(this)}>
             <label> {this.props.name}  </label>
             <div>
-                <input type="text" id={this.props.name} onChange={e=>{this.props.onChange(e.target.value)}} value={this.props.value} name={this.props.name} />
+                <input type="text" id={this.props.name} onChange={e=>{this.props.onChange(e.target.value)}} value={this.props.value} name={this.props.name} onFocus={this.myClick.bind(this)} />
                 {this.props.touched && this.props.error&&<div>{this.props.error} </div>}
             </div>
         </div>;
