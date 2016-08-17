@@ -42,6 +42,7 @@ class InitializingFromStateForm extends Component {
   myClick(){
     console.log(this.props);
     this.props.myInitForm(data1,field1);
+    //   this.props.initializeForm(data);
   }
   render() {
     const { fields: { username, othername }, handleSubmit, load, submitting } = this.props

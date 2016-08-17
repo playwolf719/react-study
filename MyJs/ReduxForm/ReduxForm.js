@@ -7,6 +7,7 @@ import {reducer as formReducer,reduxForm} from 'redux-form';
 
 import SynchronousValidationForm from './component/form/SynchronousValidationForm.js'
 import InitializingFromStateForm from './component/form/InitializingFromStateForm.js'
+import DeepForm from './component/form/DeepForm.js'
 
 const reducers = {
     // ... your other reducers here ...
@@ -29,7 +30,11 @@ export default class ReduxForm extends React.Component {
         case "init":
             form=<InitializingFromStateForm />;
             break;
+        case "deep":
+            form=<DeepForm />;
+            break;
         default :
+            form=no;
             break;
 
     }

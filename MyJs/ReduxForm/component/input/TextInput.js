@@ -13,12 +13,14 @@ export default class TextInput extends React.Component {
         // console.log(this.props);
         // 
         // The followings 2 are both OK.
+        console.log("--------myClick---------");
+        console.log(this.props);
         this.props.formProps.touch(this.props.name);
+
         // this.props.formProps.dispatch(touch("synchronousValidation",this.props.name));
 
         // console.log("------right after Touch----props touch no change--");
         // console.log(this.props);
-
     }
     render() {
     //     console.log("------re render props touch change------");
