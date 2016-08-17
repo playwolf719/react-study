@@ -3,14 +3,16 @@ import TextInput from './TextInput.js'
 
 class CombineInput extends Component {
   shouldComponentUpdate(nextProps) {
-    return this.props.phones !== nextProps.phones
+    return this.props.combname1 !== nextProps.combname1 ||
+      this.props.combname2 !== nextProps.combname2 ||
+      this.props.phones !== nextProps.phones
   }
 
   render() {
-    const { street, city, phones } = this.props
+    const { combname1, combname2, phones } = this.props
     return (<div>
-        <TextInput {...username} formProps={this.props.formProps} />
-        <TextInput {...othername} formProps={this.props.formProps} />
+        <TextInput {...combname1} formProps={this.props.formProps} />
+        <TextInput {...combname2} formProps={this.props.formProps} />
 
         <div>
           <button type="button" onClick={event => {
@@ -20,7 +22,7 @@ class CombineInput extends Component {
           </button>
         </div>
         {phones.map((phone, index) =>
-          <TextInput {...phone} formProps={this.props.formProps} />
+          <TextInput key={index} {...phone} formProps={this.props.formProps} />
         )}
       </div>
     )

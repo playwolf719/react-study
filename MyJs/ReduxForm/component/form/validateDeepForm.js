@@ -3,31 +3,22 @@ const requireFields = (...names) => data =>
     if (!data[name]) {
       errors[name] = 'Required'
     }
-    console.log(data);
+    var temp={};
     if(Array.isArray(data[name])&&data[name].length>0){
       for (var i =  0; i <data[name].length; i++) {
         console.log(data[name][i]);
         if(!data[name][i]){
-          var theName=name+"["+i+"]";
-          console.log("Required");
-          console.log(theName);
-          errors[theName]='Required';
+          temp[i]='Required';
         }
+        errors[name]=temp;
       };
     }
     return errors
   }, {} )
 
-// const requireArrayFields = (...names) => data =>
-//   names.reduce((errors, name) => {
-//         if(!errors[name][i]){
-//           theName="awards["+i+"]";
-//           errors[theName]='Required';
-//         }
-//     return errors
-//   }, {} )
 
-const validateChild = requireFields('username', 'othername',"awards")
+const validateComb = requireFields('combname1', 'combname2',"phones")
+const validateChild = requireFields('testname', 'othername',"awards")
 const validateDeepForm = data => {
   const errors = {}
   if (!data.username) {
@@ -36,7 +27,14 @@ const validateDeepForm = data => {
   if (!data.othername) {
     errors.othername = 'Required'
   }
+  errors.test = validateComb(data.test)
   errors.children = data.children.map(validateChild)
+
+  console.log("validateAll");
+  console.log(data);
+    // console.log(validateChild);
+  console.log(errors);
+  errors
   return errors
 }
 

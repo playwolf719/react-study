@@ -23,8 +23,8 @@ export default class TextInput extends React.Component {
         // console.log(this.props);
     }
     render() {
-    //     console.log("------re render props touch change------");
-    //     console.log(this.props);
+        // console.log("------re render props touch change------");
+        // console.log(this.props);
         return <div onClick={this.myClick.bind(this)}>
             <label> {this.props.name}  </label>
             <div>

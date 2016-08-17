@@ -7,22 +7,36 @@ import validate from './validateDeepForm'
 export const fields = [
   'username',
   'othername',
-  'children[].username',
+  'children[].testname',
   'children[].othername',
-  'children[].awards[]'
+  'children[].awards[]',
+  "test.combname1",
+  "test.combname2",
+  "test.phones[]",
 ]
 
 class DeepForm extends Component {
   render() {
     const {
       addValue,
-      fields: { username, othername, billing, children },
+      fields: { username, othername, children,test},
       handleSubmit,
       resetForm,
       invalid,
       submitting
     } = this.props
+    console.log("------re render DeepForm------");
+    var a=validate;
+    console.log(a);
     return (<form onSubmit={handleSubmit}>
+
+        <div>
+          <fieldset>
+            <legend>CombineInput</legend>
+            <CombineInput {...test} formProps={this.props} />
+          </fieldset>
+        </div>
+    	<div>-----------------------------</div>
 
         <TextInput {...username} formProps={this.props} />
         <TextInput {...othername} formProps={this.props} />
@@ -34,7 +48,7 @@ class DeepForm extends Component {
           </button>
           <button type="button" onClick={() => {
             children.addField({     // pushes child field with initial values onto the end of the array
-              username: 'Bobby Tables',
+              testname: 'Bobby Tables',
               othername: 'Bobby',
             })
           }}><i/> Add Bobby
@@ -44,7 +58,7 @@ class DeepForm extends Component {
 
         { children.map((child, index) => <div key={index}>
             <label>Child #{index + 1}</label>
-        	<TextInput {...child.username} formProps={this.props} />
+        	<TextInput {...child.testname} formProps={this.props} />
         	<TextInput {...child.othername} formProps={this.props} />
 		<div>
 
