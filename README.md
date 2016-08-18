@@ -17,7 +17,7 @@ react-study (surport ie-8)
   * Demo for showing how react props and react state work together
 - Animation
   * Demo for react animation
-- Redux
+- MyRedux
   * Demo for react and redux
 - ReduxForm
   * Demo for redux-form
