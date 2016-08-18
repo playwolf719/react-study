@@ -21,3 +21,6 @@ react-study (surport ie-8)
   * Demo for react and redux
 - ReduxForm
   * Demo for redux-form
+  * Init Form
+  * Validate Form
+  * Deep Form
