@@ -7,6 +7,7 @@ import Test from './Animation/Animation.js';
 import Carousel from './Animation/Carousel.js';
 import Redux from './Redux/Redux.js';
 import ReduxForm from './ReduxForm/ReduxForm.js';
+import MyRedux from './MyRedux/index.js';
 
 
 render((
@@ -18,5 +19,6 @@ render((
         <Route path="/ani/2" /*组件内注释*/  component={Carousel}/>
         <Route path="/redux" /*组件内注释*/  component={Redux}/>
         <Route path="/redux-form/:type"  component={ReduxForm}/>
+        <Route path="/my-redux"  component={MyRedux}/>
     </Router>
 ), document.getElementById('Content'));

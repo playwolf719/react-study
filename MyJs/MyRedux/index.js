@@ -8,7 +8,7 @@ import App from './components/App'
 
 let store = createStore(todoApp)
 
-export default class Redux extends React.Component {
+export default class MyRedux extends React.Component {
   constructor(props) {
     super(props);
   }

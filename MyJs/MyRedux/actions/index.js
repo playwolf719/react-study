@@ -20,3 +20,12 @@ export const toggleTodo = (id) => {
     id
   }
 }
+
+
+export const toggleTest = (filter) => {
+  return {
+    type: 'MY_TEST',
+    filter
+  }
+}
+
