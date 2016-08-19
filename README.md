@@ -1,5 +1,4 @@
-# react-study
-react-study with redux-form (surport ie-8)
+# react and redux study with redux-form 
 
 ------------
 
