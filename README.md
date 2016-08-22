@@ -4,7 +4,7 @@
 
 ## features
 
-- suport ie-8
+- suport ie8
 - with react, redux , redux-form
 - code style are ES6 and ES5
 
