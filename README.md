@@ -23,3 +23,13 @@
   * Init Form
   * Validate Form
   * Deep Form
+  
+----------------
+# react学习
+
+## 特性
+- 支持ie8
+- 目前demo包含react, react-router, redux, redux-form ...
+- 书写风格既有es6又有es5
+
+## 项目结构
