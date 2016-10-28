@@ -34,4 +34,4 @@
 
 ## 内容
 - react属性和状态demo（这个主要看效果和代码进行理解）
-![image](http://chuantu.biz/t5/39/1477622937x236000801.jpg)
+![test](http://chuantu.biz/t5/39/1477622937x236000801.jpg)
