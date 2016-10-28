@@ -32,4 +32,5 @@
 - 目前demo包含react, react-router, redux, redux-form ...
 - 书写风格既有es6又有es5
 
-## 项目结构
+## 内容
+- react属性和状态demo（这个主要看效果和代码进行理解）
