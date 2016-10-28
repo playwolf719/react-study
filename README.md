@@ -33,5 +33,15 @@
 - 书写风格既有es6又有es5
 
 ## 内容
-- react属性和状态demo（这个主要看效果和代码进行理解）
+- react属性和状态demo
+
 ![test](http://s4.postimg.org/z5iekzbfh/QQ_20161028105309.jpg)
+
+
+- 动画
+- redux尝试
+- redux-form
+
+![test](http://s13.postimg.org/7b380ha9z/QQ_20161028111827.jpg)
+![test](http://s14.postimg.org/esucfchkh/QQ_20161028112024.jpg)
+
