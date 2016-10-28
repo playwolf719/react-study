@@ -46,4 +46,4 @@
 ![test](http://s14.postimg.org/esucfchkh/QQ_20161028112024.jpg)
 
 ## 使用
-注意，使用npm install之后，如果想在ie8下也能ok，一定一定一定要注意安装的版本是否和json中的一致（尤其是react-router,该插件2.3之后，不支持ie8）
+注意，使用npm install之后，如果想在ie8下也能ok，一定一定一定要注意安装的版本是否和package.json中的一致（尤其是react-router,该插件2.3之后，不支持ie8）
