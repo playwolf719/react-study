@@ -40,7 +40,7 @@
 
 - 动画
 - redux尝试
-- redux-form
+- redux-form（给子级元素添加了验证功能）
 
 ![test](http://s13.postimg.org/7b380ha9z/QQ_20161028111827.jpg)
 ![test](http://s14.postimg.org/esucfchkh/QQ_20161028112024.jpg)
