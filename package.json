@@ -20,7 +20,7 @@
     "react-addons-css-transition-group": "^0.14.8",
     "react-dom": "^0.14.7",
     "react-redux": "^4.4.5",
-    "react-router": "^2.3.0",
+    "react-router": "2.3.0",
     "redux": "^3.3.1",
     "redux-form": "^5.3.1",
     "style-loader": "^0.13.1",
