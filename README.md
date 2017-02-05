@@ -13,13 +13,13 @@
 ## content
 
 - PropsAndState
-  * Demo for showing how react props and react state work together
+  * Showing how react props and react state work together
 - Animation
-  * Demo for react animation
+  * React animation
 - MyRedux
-  * Demo for react and redux
+  * React and redux
 - ReduxForm
-  * Demo for redux-form
+  * Redux-form
   * Init Form
   * Validate Form
   * Deep Form
@@ -29,11 +29,11 @@
 
 ## 特性
 - 支持ie8
-- 目前demo包含react, react-router, redux, redux-form ...
+- 包含react, react-router, redux, redux-form ...
 - 书写风格既有es6又有es5
 
 ## 内容
-- react属性和状态demo
+- react属性和状态相关
 
 ![test](http://s4.postimg.org/z5iekzbfh/QQ_20161028105309.jpg)
 
